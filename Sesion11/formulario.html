@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario Ejercicio</title>
+    <title>Document</title>
+</head>
+<body>
+    <div id="Contenedor" style="width: 500px;">
+        <h2>Encuensta de Cine: Nominadas al oscar 2026</h2>
+
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+                <fieldset id="datos_personales">
+                    <legend>Datos personales</legend>
+
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="nombre" id="nombre"><br><br>
+
+                    <label for="apellidos">Apellidos</label><br>
+                    <input type="text" name="apellidos" id="nombre"><br><br>
+
+                    <label for="dni">DNI</label><br>
+                    <input type="number" name="dni" id="dni" maxlength="9"><br><br>
+
+                    <label for="edad">Edad</label><br>
+                    <input type="number" name="edad" id="edad"><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email"><br><br>
+
+                    <label for="Sexo">Sexo</label><br>
+                    <select name="Sexo" id="Sexo">
+                    <option value="M" selected="selected">Masculino</option>    
+                    <option value="F">Femenino</option>
+                    </select>
+                </fieldset><br>
+
+
+                <fieldset id="pelicula">
+                    <legend>Mejo pelicula</legend>
+
+                    <input type="radio" id="pelicula01" name="peliculas">
+                    <label for="pelicula01">Pelicula 01</label><br>
+
+                    <input type="radio" id="pelicula02" name="peliculas">
+                    <label for="pelicula02">Pelicula 02</label><br>
+
+                    <input type="radio" id="pelicula03" name="peliculas">
+                    <label for="pelicula03">Pelicula 03</label><br>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Selecciona pelicula que no hayas visto</legend>
+
+                    <input type="checkbox" name="pelicula01">
+                    <label for="pelicula01">Pelicula 01</label><br>
+
+                    
+
+                </fieldset>
+                
+        </form>
+
+    </div>
+
+
+
+</body>
+</html>

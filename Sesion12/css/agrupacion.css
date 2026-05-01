@@ -1,0 +1,19 @@
+/* div{
+    font-size: 12px;
+    color: #81a61a;
+}
+
+h1{
+    font-size: 12px;
+    color: #81a61a;
+}
+
+h2{
+    font-size: 12px;
+    color: #81a61a;
+} */
+
+div, h1, h2{
+    font-size: 12px;
+    color: #81a61a;
+}
