@@ -1,0 +1,8 @@
+ a[ clas = "externo"]{
+    color:green; 
+} 
+
+ a[ clas ~= "prueba"]{
+    color:magenta; 
+} 
+
