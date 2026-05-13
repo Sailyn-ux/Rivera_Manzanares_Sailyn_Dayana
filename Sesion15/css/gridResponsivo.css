@@ -11,15 +11,15 @@ main {
     grid-template-columns: 100%;
     grid-template-rows: 80px 1fr 100px;
     grid-template-areas: "my-nav" "my-section" "my-aside";
-
 }
 
 header {
-    background-color: firebrick;
+    background-color: rgb(223, 15, 15);
     color: white;
+    height: 100px;
     text-align: center;
-    line-height: 100px;
     min-height: 16vh;
+
 }
 
 nav {
@@ -30,20 +30,13 @@ nav {
 section {
     background-color: pink;
     grid-area: my-section;
-
 }
 
 aside {
     background-color: lightcoral;
     grid-area: my-aside;
-
 }
 
-nav,
-section,
-aside {
-    padding: 20px;
-}
 
 footer {
     background-color: darkred;
@@ -53,32 +46,33 @@ footer {
     line-height: 60px;
 }
 
+nav,
+section,
+aside {
+    padding: 10px;
+}
+
 li {
     list-style: none;
-
 }
 
 a {
     text-decoration: none;
-    color: black
+    color: black;
 }
 
-@media (min-width:600px) and (min-width:1000px) {
+@media (min-width:600px) and (max-width:1000px) {
     main {
-        display: grid;
         grid-template-columns: 30% 1fr;
         grid-template-rows: 80px 1fr;
-        grid-template-areas: "my-nav my-nav" "my-aside my-section ";
-
+        grid-template-areas: "my-nav my-nav" " my-aside my-section";
     }
 }
 
 @media (min-width:1001px) {
     main {
-        display: grid;
-        grid-template-columns: 30% 1fr;
-        grid-template-rows: 80px 1fr;
-        grid-template-areas: "my-nav my-section my-aside ";
-
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 100%;
+        grid-template-areas: "my-nav my-section my-aside";
     }
 }
