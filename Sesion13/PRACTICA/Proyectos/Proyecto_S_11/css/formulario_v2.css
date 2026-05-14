@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(to right, #141414, #2c2c2c);
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    color: white
+}
+
+form {
+    width: 500px;
+    margin: 40px;
+    background-color: rgba(216, 143, 255, 0.838);
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+
+fieldset{
+    border: 2px solid gold;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+legend{
+    color: gold;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 20px;
+    
+}
+input, select{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
