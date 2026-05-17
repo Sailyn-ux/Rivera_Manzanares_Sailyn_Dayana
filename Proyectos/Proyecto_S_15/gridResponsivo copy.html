@@ -10,7 +10,13 @@
 
 <body>
     <header>
-        <h1>Encabezado de la página</h1>
+        <img class="img-header" src="img/rotoplas.png" alt="">
+        <img class="img-header" src="img/her.png" alt="">
+        <div>
+            <h1>Ferretería El Constructor</h1>
+        </div>
+        <img class="img-header" src="img/herramientas_caja.png" alt="">
+        <img class="img-header" src="img/estuche.jpg" alt="">
     </header>
     <main>
         <nav>
@@ -23,33 +29,83 @@
             </ul>
         </nav>
         <section>
-            <h2>Contenido principal</h2>
-            <p>Aquí va el contenido principal de la página</p>
+            <h2>OFRECEMOS</h2>
+
             <article>
-                <h3>🔨 Venta de herramientas</h3>
+                <h3>Venta de herramientas</h3>
                 <p>Tenemos martillos, taladros y más.</p>
             </article>
 
             <article>
-                <h3>🪵 Materiales de construcción</h3>
+                <h3>Materiales de construcción</h3>
                 <p>Cemento, ladrillos y accesorios.</p>
             </article>
 
             <article>
-                <h3>💡 Electricidad</h3>
+                <h3>Electricidad</h3>
                 <p>Cables, focos y extensiones.</p>
             </article>
+
+            <article>
+                <h3>Carpintería</h3>
+                <p>Maderas, barnices y herramientas de carpintería.</p>
+            </article>
+
+            <article>
+                <h3>Gasfitería</h3>
+                <p>Tuberías, llaves de agua y accesorios sanitarios.</p>
+            </article>
+
+            <article>
+                <h3>Pinturas</h3>
+                <p>Pinturas, brochas, rodillos y esmaltes.</p>
+            </article>
+
+            <article>
+                <h3>Jardinería</h3>
+                <p>Mangueras, macetas y herramientas para jardín.</p>
+            </article>
+
+            <article>
+                <h3>Seguridad</h3>
+                <p>Candados, cerraduras y equipos de protección.</p>
+            </article>
+
         </section>
         <aside>
-            <h2>Información adicional</h2>
-            <p>Este es un apartado de información adicional: enlaces, buscador, imágenes</p>
-            <ul>
-                <li>✔ Pinturas</li>
-                <li>✔ Tornillos</li>
-                <li>✔ Cemento</li>
-                <li>✔ Herramientas</li>
-                <li>✔ Mangueras</li>
-            </ul>
+            <h2>Haz tu pedido</h2>
+            <p>Realiza tu compra rápido y fácil con tu dni</p>
+            <form>
+                <label for="dni">DNI</label><br>
+                <input type="text" id="dni" placeholder="Ingrese su DNI"><br><br>
+
+                <label for="producto">Producto</label><br>
+                <select id="producto">
+                    <option>Martillo</option>
+                    <option>Taladro</option>
+                    <option>Cemento</option>
+                    <option>Pintura</option>
+                    <option>Cables eléctricos</option>
+                    <option>Mangueras</option>
+                </select><br><br>
+
+                <label for="cantidad">Cantidad</label><br>
+                <input type="number" id="cantidad" placeholder="Cantidad"><br><br>
+
+                <button type="submit">Realizar pedido</button>
+                
+            </form>
+
+            <h2>Productos más populares</h2>
+                <ul>
+                    <li>✔ Pinturas</li>
+                    <li>✔ Tornillos</li>
+                    <li>✔ Cemento</li>
+                    <li>✔ Herramientas</li>
+                    <li>✔ Mangueras</li>
+                </ul>
+
+                <img class="img-header" src="img/bob_constructor.png" alt="">
         </aside>
 
 

@@ -13,21 +13,27 @@ main {
     grid-template-areas: "my-nav" "my-section" "my-aside";
 }
 
-header {
+header{
     background-color: rgb(223, 15, 15);
     color: white;
-    height: 100px;
-    text-align: center;
+
     min-height: 16vh;
 
-}
+    display: flex;
 
-header h1 {
-    font-size: 40px;
-}
+    justify-content: space-between;
 
-header p {
-    font-size: 18px;
+    align-items: center;
+
+    padding: 20px;
+
+    gap: 20px;
+}
+.img-header{
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
 }
 
 nav {
@@ -107,6 +113,43 @@ article{
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+aside form{
+    margin-top: 20px;
+}
+
+aside label{
+    font-weight: bold;
+}
+
+aside input,
+aside select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+aside button{
+    width: 100%;
+    padding: 12px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+aside button:hover{
+    background-color: red;
+}
+
+aside ul{
+    margin-top: 20px;
 }
 @media (min-width:600px) and (max-width:1000px) {
     main {
