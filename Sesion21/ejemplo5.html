@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Moderno</title>
+    <link rel="stylesheet" href="css/ejemplo5.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h2>Formulario de Registro</h2>
+
+        <form>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Ingrese su nombre completo">
+
+            <label>Correo:</label>
+            <input type="email" placeholder="ejemplo@correo.com">
+
+            <label>Teléfono:</label>
+            <input type="tel" placeholder="987654321">
+
+            <label>Foto de perfil:</label>
+            <input type="file">
+
+            <button type="button" onclick="modal.showModal()">
+                Enviar
+            </button>
+        </form>
+    </div>
+
+    <dialog id="modal">
+        <h3>Registro exitoso</h3>
+        <p>Sus datos fueron enviados correctamente.</p>
+
+        <button onclick="modal.close()">
+            Cerrar
+        </button>
+    </dialog>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+.frase-celebre{
+    position: relative;
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 500px;
+    color: #2c3e50;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.frase-celebre::before{
+    content: "“";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 5rem;
+    color: #007bff;
+    opacity: 0.3;
+    font-family: serif; 
+}
+
+.frase-celebre cite {
+    display: block;
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
