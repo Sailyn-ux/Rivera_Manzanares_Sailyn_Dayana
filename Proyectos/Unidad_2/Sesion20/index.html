@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda V2</title>
     <link rel="stylesheet" href="css/agenda1.css">
 </head>
-
 <body>
     <div class="Formulario">
         <h2>Agregar Contacto</h2>
@@ -22,11 +20,27 @@
                 <label for="telefono">Teléfono:</label>
                 <input type="text" id="telefono">
             </div>
+
+            <div class="campos">
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" accept="image/*">
+            </div>
+
+            <div class="campos">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo">
+            </div>
+
+            <div class="campos">
+                <img id="preview" src="" width="100" alt="Vista previa" style="display:none;">
+            </div>
+
             <div class="botones">
                 <input type="button" value="Guardar" id="guardarBtn">
                 <input type="button" value="Buscar" id="buscarBtn">
                 <input type="button" value="Eliminar" id="eliminarBtn">
                 <input type="button" value="Eliminar todos" id="eliminarTodosBtn">
+                <input type="button" value="Modificar" id="modificar">
             </div>
 
         </form>
@@ -35,17 +49,18 @@
         <h2>Lista de contactos</h2>
         <table class="tabla-contactos">
             <thead>
-                <th>Nombre</th>
-                <th>Teléfono</th>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                </tr>
             </thead>
             <tbody id="listaContactos">
-               <td></td>
-               <td></td>
             </tbody>
         </table>
     </div>
 
     <script src="js/agenda1.js"></script>
 </body>
-
 </html>

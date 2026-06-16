@@ -39,7 +39,7 @@ h2{
 }
 
 .Formulario, .Contactos{
-    width: 400px;
+    width: 800px;
     margin: auto;
     padding: 10px;
 }
@@ -52,7 +52,7 @@ h2{
 
 .tabla-contactos th{
     background-color: #00ffaa;
-    text-align: left;
+    text-align: center;
     padding: 4px 8px;
     border: 1px solid #ccc;
 }
