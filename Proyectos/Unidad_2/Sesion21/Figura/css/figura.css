@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(
+        to bottom,
+        #8fd3ff,
+        #dff6ff
+    );
+    height: 100vh; /* Para que el fondo ocupe toda la pantalla */
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* CONTENEDOR - Animación de flotar */
+.leon {
+    width: 360px;
+    height: 360px;
+    margin: 40px auto;
+    position: relative;
+    animation: flotar 4s ease-in-out infinite;
+}
+
+/* MELENA - Animación de giro */
+.melena {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: girar 15s linear infinite;
+}
+
+.melena span {
+    width: 90px;
+    height: 120px;
+    background: linear-gradient(
+        to bottom,
+        #ffca28,
+        #ff9800
+    );
+    border-radius: 50%;
+    position: absolute;
+    left: 135px;
+    top: 120px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+/* Distribución circular */
+.melena span:nth-child(1){transform:rotate(0deg) translateY(-125px);}
+.melena span:nth-child(2){transform:rotate(30deg) translateY(-125px);}
+.melena span:nth-child(3){transform:rotate(60deg) translateY(-125px);}
+.melena span:nth-child(4){transform:rotate(90deg) translateY(-125px);}
+.melena span:nth-child(5){transform:rotate(120deg) translateY(-125px);}
+.melena span:nth-child(6){transform:rotate(150deg) translateY(-125px);}
+.melena span:nth-child(7){transform:rotate(180deg) translateY(-125px);}
+.melena span:nth-child(8){transform:rotate(210deg) translateY(-125px);}
+.melena span:nth-child(9){transform:rotate(240deg) translateY(-125px);}
+.melena span:nth-child(10){transform:rotate(270deg) translateY(-125px);}
+.melena span:nth-child(11){transform:rotate(300deg) translateY(-125px);}
+.melena span:nth-child(12){transform:rotate(330deg) translateY(-125px);}
+
+/* OREJAS */
+.oreja {
+    width: 85px;
+    height: 85px;
+    background: #ff9800;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+}
+
+.oreja::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #ffd180;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 17px;
+}
+
+.izquierda {
+    left: 70px;
+}
+
+.derecha {
+    right: 70px;
+}
+
+/* CARA */
+.cara {
+    width: 220px;
+    height: 220px;
+    background: #ffe082;
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    z-index: 3;
+    box-shadow:
+    inset 0 5px 10px rgba(255,255,255,.7),
+    0 4px 12px rgba(0,0,0,.15);
+}
+
+/* OJOS - Animación de parpadeo */
+.ojo {
+    width: 22px;
+    height: 22px;
+    background: #222;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    animation: parpadear 4s infinite;
+}
+
+.ojo::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+
+.ojo-izq {
+    left: 58px;
+}
+
+.ojo-der {
+    right: 58px;
+}
+
+/* HOCICO */
+.hocico {
+    width: 120px;
+    height: 85px;
+    background: #fff0d0;
+    border-radius: 60px;
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+}
+
+.nariz {
+    width: 30px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    margin: 12px auto;
+}
+
+.boca {
+    width: 50px;
+    height: 25px;
+    border-bottom: 4px solid #333;
+    border-radius: 0 0 50px 50px;
+    margin: auto;
+}
+
+/* --- ANIMACIONES --- */
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes parpadear {
+    0%, 90%, 100% { transform: scaleY(1); }
+    95% { transform: scaleY(0.1); }
+}
