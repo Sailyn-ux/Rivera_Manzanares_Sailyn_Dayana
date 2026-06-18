@@ -1,0 +1,5 @@
+div [class ^="col"]{
+    background-color: aquamarine;
+    text-align: center;
+    border: 1px solid blue;
+}
