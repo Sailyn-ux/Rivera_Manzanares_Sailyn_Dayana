@@ -1,0 +1,53 @@
+.logo{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.servicio{
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.producto{
+    transition: 0.3s;
+}
+
+.producto:hover{
+    transform: translateY(-5px);
+}
+
+footer h5{
+    margin-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    font-size: 14px;
+}
+
+footer .table td{
+    padding: 8px;
+}
+
+footer .btn-light{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-info{
+    background-color: #22c7ea !important;
+}
